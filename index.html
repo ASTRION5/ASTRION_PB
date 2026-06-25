@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PagBank + EZZE Consórcios | Business Case Executivo</title>
+<style>
+:root{
+  --bg:#06101d; --bg2:#0b1d33; --card:#0f1f33; --card2:#132a45;
+  --text:#f4f7fb; --muted:#a9b8c8; --green:#19e86c; --gold:#f5b942;
+  --blue:#58a6ff; --red:#ff6b6b; --line:rgba(255,255,255,.12); --white:#fff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,var(--bg),var(--bg2));color:var(--text)}
+a{color:inherit}.wrap{max-width:1360px;margin:auto;padding:32px}.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(6,16,29,.82);border-bottom:1px solid var(--line)}
+.navin{max-width:1360px;margin:auto;padding:12px 32px;display:flex;gap:10px;overflow:auto;white-space:nowrap}.nav a{font-size:13px;text-decoration:none;padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}.nav a:hover{color:var(--green);border-color:rgba(25,232,108,.45)}
+.hero{min-height:92vh;display:flex;align-items:center;border-bottom:1px solid var(--line);background:radial-gradient(circle at 85% 18%,rgba(25,232,108,.18),transparent 32%),radial-gradient(circle at 12% 25%,rgba(88,166,255,.15),transparent 34%),linear-gradient(135deg,#07111f,#0e2540)}
+.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center}.logos{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}.logo{font-weight:900;letter-spacing:.5px;border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:rgba(255,255,255,.04)}.logo.pag{color:var(--green)}.logo.ezze{color:#27ff52}.logo.anc{color:#8bd0ff}.logo.ass{color:var(--gold)}
+h1{font-size:48px;line-height:1.05;margin:8px 0 14px;max-width:950px}.lead{font-size:18px;line-height:1.55;color:#dce8f4;max-width:900px}.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(245,185,66,.14);color:var(--gold);border:1px solid rgba(245,185,66,.35);font-size:13px;margin:4px 6px 4px 0}.panel{background:rgba(15,31,51,.82);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 18px 60px rgba(0,0,0,.28)}
+section{padding:40px 0}h2{font-size:30px;color:var(--gold);margin:0 0 18px}h3{margin:0 0 10px}.small{color:var(--muted);font-size:14px;line-height:1.55}p,li{line-height:1.58}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.18)}.kpi{font-size:33px;font-weight:900;color:var(--green);line-height:1}.kpi.gold{color:var(--gold)}.kpi.blue{color:var(--blue)}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden;margin-top:12px}th,td{padding:14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--card2);color:var(--gold);font-size:13px;text-transform:uppercase;letter-spacing:.04em}.green{color:var(--green);font-weight:800}.gold{color:var(--gold);font-weight:800}.blue{color:var(--blue);font-weight:800}.red{color:var(--red);font-weight:800}.note{border-left:4px solid var(--green);padding:14px 16px;background:rgba(25,232,108,.08);border-radius:12px;color:#dfffea}.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.node{border:1px solid var(--line);border-radius:16px;background:#122943;padding:15px 18px;font-weight:800}.arrow{font-size:24px;color:var(--gold)}
+.barBox{margin:16px 0}.barLabel{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:6px}.bar{height:14px;border-radius:999px;background:#20364f;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--green),#c8ffd8)}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;color:var(--muted);margin:3px}.footer{margin:34px 0 20px;padding:20px;border-radius:18px;background:#091827;color:var(--muted);font-size:13px}
+@media(max-width:900px){.heroGrid,.split{grid-template-columns:1fr}.hero{min-height:auto;padding:34px 0}h1{font-size:34px}.wrap{padding:22px}.navin{padding:10px 22px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+<a href="#capa">Capa</a><a href="#pagbank">Resumo PagBank</a><a href="#concentracao">Base e concentração</a><a href="#produtos">Produtos PagBank</a><a href="#mercado">Mercado de consórcios</a><a href="#ezze">EZZE / Âncora</a><a href="#comparativo">Por que esta opção</a><a href="#executiva">Análise executiva</a><a href="#remuneracao">Remuneração</a><a href="#roadmap">Roadmap</a><a href="#fontes">Fontes</a>
+</div></nav>
+<header class="hero" id="capa"><div class="wrap heroGrid">
+<div>
+<div class="logos"><div class="logo pag">PAGBANK</div><div class="logo ezze">EZZE CONSÓRCIOS</div><div class="logo anc">ÂNCORA CONSÓRCIOS</div><div class="logo ass">ASSESSORIA</div></div>
+<span class="badge">Business Case Executivo</span><span class="badge">White Label</span><span class="badge">Consórcios</span><span class="badge">Preparação para reunião</span>
+<h1>PagBank + EZZE Consórcios: expansão do ecossistema financeiro via consórcios</h1>
+<p class="lead">Tese técnica para uma parceria em que a PagBank aproveita sua base, marca e canais; a EZZE estrutura a frente de negócio; a operação original é suportada pela Âncora Consórcios; e a assessoria especializada entra como camada de implantação, governança, inteligência comercial e performance.</p>
+</div>
+<div class="panel">
+<h3>Mensagem central</h3>
+<p>O consórcio não deve ser tratado como um produto isolado, mas como uma nova camada de aquisição planejada de bens dentro do ecossistema PagBank.</p>
+<div class="grid"><div><div class="kpi">R$ 500 bi</div><p class="small">créditos comercializados no setor em 2025</p></div><div><div class="kpi gold">5,16 mi</div><p class="small">cotas vendidas no setor em 2025</p></div><div><div class="kpi blue">17,4 mi</div><p class="small">clientes bancários ativos PagBank no 2T25</p></div><div><div class="kpi">6,3 mi</div><p class="small">comerciantes ativos PagBank no 2T25</p></div></div>
+</div>
+</div></header>
+<main class="wrap">
+<section id="pagbank">
+<h2>1. Página resumo da PagBank</h2>
+<div class="grid">
+<div class="card"><div class="kpi blue">17,4 mi</div><p><strong>Clientes bancários ativos</strong></p><p class="small">Base bancária ativa reportada no 2T25, considerando clientes Banking e Banking + Payments.</p></div>
+<div class="card"><div class="kpi">6,3 mi</div><p><strong>Comerciantes ativos</strong></p><p class="small">Base de merchants ativos no negócio de pagamentos no 2T25.</p></div>
+<div class="card"><div class="kpi gold">R$ 130 bi</div><p><strong>TPV total 2T25</strong></p><p class="small">Volume total de pagamentos no trimestre, sendo 83% Cards TPV e 17% Pix.</p></div>
+<div class="card"><div class="kpi">R$ 90,6 bi</div><p><strong>Cash-in Banking</strong></p><p class="small">Entradas em contas PagBank no 2T25, +18,6% contra 2T24.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><p class="note"><strong>Leitura executiva:</strong> a PagBank já reúne escala de pagamentos, relacionamento bancário e base PJ relevante. O consórcio entra como produto de aquisição planejada para momentos em que o cliente quer comprar carro, moto, imóvel, equipamento, frota, máquina ou ativo produtivo.</p></div>
+</section>
+<section id="concentracao">
+<h2>2. Concentração da base: leitura PF/PJ sem inventar dado</h2>
+<div class="split">
+<div class="card">
+<h3>Proxy público disponível</h3>
+<p class="small">Os materiais públicos não trazem uma quebra exata “PF x PJ” consolidada. Para não fragilizar o estudo, usamos proxies públicos: clientes bancários ativos, comerciantes ativos e TPV por segmento.</p>
+<div class="barBox"><div class="barLabel"><span>Clientes bancários ativos</span><span>17,4 mi</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
+<div class="barBox"><div class="barLabel"><span>Comerciantes ativos</span><span>6,3 mi</span></div><div class="bar"><div class="fill" style="width:36%"></div></div></div>
+<div class="barBox"><div class="barLabel"><span>MSMB TPV 2T25</span><span>R$ 36 bi</span></div><div class="bar"><div class="fill" style="width:38%"></div></div></div>
+<div class="barBox"><div class="barLabel"><span>Large Retail & Online TPV 2T25</span><span>R$ 94 bi</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
+</div>
+<div class="card">
+<h3>Implicação para consórcios</h3>
+<ul>
+<li><strong>Clientes PF/banking:</strong> aderência para auto, moto, imóvel, serviços e planejamento patrimonial.</li>
+<li><strong>Comerciantes/PJ:</strong> aderência para equipamentos, frota, máquinas, imóvel comercial, reforma e expansão.</li>
+<li><strong>TPV MSMB:</strong> sinaliza relevância do pequeno e médio negócio, público natural para compra planejada de ativos produtivos.</li>
+<li><strong>Large Retail & Online:</strong> abre frente para programas customizados, parceiros, marketplaces e campanhas white label.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="produtos"><h2>3. Produtos PagBank e encaixe do consórcio</h2>
+<table><tr><th>Vertical PagBank</th><th>O que já existe</th><th>Como o consórcio agrega</th><th>Produto de consórcio prioritário</th></tr>
+<tr><td>Pagamentos / Maquininhas</td><td>Recebimento, TPV, gestão de vendas, Pix, cartões.</td><td>Oferta de carta de crédito baseada em necessidade de expansão, compra de equipamento ou renovação de frota.</td><td>Equipamentos, pesados, auto/moto.</td></tr>
+<tr><td>Conta Digital</td><td>Conta PF/PJ, Pix, boletos, cartão, movimentação financeira.</td><td>Contratação e acompanhamento dentro do app, com jornada simples e recorrente.</td><td>Auto, imóvel, serviços.</td></tr>
+<tr><td>Crédito</td><td>Carteira de crédito, antecipação e produtos garantidos.</td><td>Consórcio complementa o crédito: planejamento sem juros de financiamento e menor consumo de balanço.</td><td>Auto, equipamentos, imóvel.</td></tr>
+<tr><td>Investimentos</td><td>Depósitos, CDB, fundos e reserva financeira.</td><td>Consórcio conversa com disciplina de longo prazo e formação patrimonial.</td><td>Imóveis e auto.</td></tr>
+<tr><td>Seguros</td><td>Penetração de seguros reportada nos materiais de banking.</td><td>Contemplação gera momento ideal para seguro do bem, vida, empresarial ou proteção financeira.</td><td>Cross-sell pós-contemplação.</td></tr></table>
+</section>
+<section id="mercado"><h2>4. Mercado brasileiro de consórcios</h2>
+<div class="grid"><div class="card"><div class="kpi gold">R$ 500,27 bi</div><p class="small">Créditos comercializados em 2025, alta de 32,1% sobre 2024.</p></div><div class="card"><div class="kpi">5,16 mi</div><p class="small">Cotas vendidas em 2025, alta de 15,0% sobre 2024.</p></div><div class="card"><div class="kpi blue">12,7 mi</div><p class="small">Participantes ativos no sistema em 2025, conforme material EZZE.</p></div><div class="card"><div class="kpi">R$ 36 bi</div><p class="small">Volume médio mensal de vendas informado no material EZZE.</p></div></div>
+<table><tr><th>Leitura</th><th>Impacto para PagBank</th></tr><tr><td>Mercado grande, em crescimento e com múltiplos segmentos.</td><td>Cria avenida de receita sem depender exclusivamente de spread de crédito.</td></tr><tr><td>Consórcio possui apelo de planejamento financeiro.</td><td>Combina com clientes que já usam banking, investimentos e conta PJ.</td></tr><tr><td>Produtos de imóveis, auto/moto, pesados e outros bens são abrangentes.</td><td>Permite campanhas por público: PF, MEI, lojista, transportador e PME.</td></tr></table>
+</section>
+<section id="ezze"><h2>5. Produto EZZE / Âncora: dados do material recebido</h2>
+<div class="grid"><div class="card"><h3>Âncora Consórcios</h3><p class="small">Fundada em 1989, descrita no material como especialista e pioneira em White Label, com equipe dedicada à EZZE Consórcios e seus corretores/parceiros.</p></div><div class="card"><h3>Imóveis</h3><p class="small">Taxas a partir de 18%, prazos médios de 200 meses e planos integral, fácil e meia-parcela.</p></div><div class="card"><h3>Automóveis</h3><p class="small">Carros novos e usados até 8 anos; motos novas e usadas até 5 anos; taxas a partir de 14% e prazos de 100 meses.</p></div><div class="card"><h3>Pesados</h3><p class="small">Caminhões novos e usados até 8 anos, renovação de frota e automóveis premium; taxas a partir de 12% e prazos de 120 meses.</p></div></div>
+<table><tr><th>Diferencial operacional</th><th>Descrição</th><th>Valor para PagBank</th></tr><tr><td>Lance livre</td><td>Maior oferta percentual pode contemplar.</td><td>Flexibilidade para clientes com caixa disponível.</td></tr><tr><td>Lance fixo</td><td>Administradora define percentual, no material indicado como 30%.</td><td>Simplifica a comunicação comercial.</td></tr><tr><td>Lance fidelidade</td><td>25% do crédito para clientes adimplentes e demais critérios.</td><td>Incentiva permanência e bom comportamento de pagamento.</td></tr><tr><td>Lance limitado</td><td>Oferta limitada a 60%, sem lance embutido.</td><td>Mais uma alternativa para estratégia de contemplação.</td></tr><tr><td>Pagamento com embutido</td><td>Material indica embutido de 30%.</td><td>Amplia acessibilidade para cliente com menor liquidez imediata.</td></tr></table>
+</section>
+<section id="comparativo"><h2>6. Por que EZZE / Âncora é uma opção forte para este contexto</h2>
+<table><tr><th>Critério</th><th>EZZE / Âncora</th><th>Administradora própria PagBank</th><th>Parceiro genérico sem camada de assessoria</th></tr>
+<tr><td>Time to market</td><td class="green">Estrutura operacional já existente e modelo White Label declarado.</td><td class="red">Maior prazo regulatório, tecnológico e operacional.</td><td class="gold">Depende de integração e governança.</td></tr>
+<tr><td>Aderência ao modelo white label</td><td class="green">Material apresenta Âncora como especialista/pioneira em White Label.</td><td class="gold">Exigiria construção interna.</td><td class="gold">Pode existir, mas precisa ser comprovado.</td></tr>
+<tr><td>Produtos</td><td class="green">Imóveis, auto/moto, pesados e outros bens.</td><td class="gold">A definir.</td><td class="gold">Depende do parceiro.</td></tr>
+<tr><td>Modelo econômico</td><td class="green">Material apresenta comissão inicial e projeção de receita por produção.</td><td class="red">Exigiria estrutura própria de remuneração e governança.</td><td class="gold">Pode não vir acompanhado de implantação e gestão.</td></tr>
+<tr><td>Assessoria técnica</td><td class="green">Nós agregamos implantação, playbook, BI, treinamento e governança.</td><td class="red">PagBank teria que construir internamente.</td><td class="red">Risco de operação virar apenas venda, sem gestão do processo.</td></tr></table>
+<div class="card" style="margin-top:16px"><p class="note"><strong>Conclusão comparativa:</strong> a força da tese não está apenas no produto. Está na combinação entre marca PagBank, estrutura EZZE/Âncora, modelo White Label e assessoria especializada capaz de transformar o produto em operação escalável, controlada e mensurável.</p></div>
+</section>
+<section id="executiva"><h2>7. Análise executiva: como a operação geraria valor</h2>
+<div class="flow"><div class="node">PagBank<br><span class="small">Base, marca, canais</span></div><div class="arrow">→</div><div class="node">Assessoria<br><span class="small">Implantação e governança</span></div><div class="arrow">→</div><div class="node">EZZE<br><span class="small">Produto e parceiro de negócio</span></div><div class="arrow">→</div><div class="node">Âncora<br><span class="small">Operação original</span></div><div class="arrow">→</div><div class="node">Cliente<br><span class="small">PF, MEI, PJ</span></div></div>
+<table><tr><th>Frente</th><th>Entrega da assessoria</th><th>Ganho para PagBank</th></tr><tr><td>Estruturação</td><td>Fluxos, RACI, governança, playbook e desenho da esteira.</td><td>Menos ruído operacional e implantação mais rápida.</td></tr><tr><td>Comercial</td><td>Scripts, segmentação, abordagem por público e treinamento.</td><td>Maior conversão e menor risco de venda mal explicada.</td></tr><tr><td>Dados</td><td>Funil, indicadores, produtividade, qualidade e BI.</td><td>Gestão mensurável desde o piloto.</td></tr><tr><td>Qualidade</td><td>Régua de acompanhamento, monitoramento de cancelamentos e reclamações.</td><td>Proteção da marca e experiência do cliente.</td></tr><tr><td>Expansão</td><td>Identificação de novas ofertas por segmento e cross-sell.</td><td>Mais receita por cliente e maior retenção no ecossistema.</td></tr></table>
+</section>
+<section id="remuneracao"><h2>8. Justificativa de remuneração</h2>
+<div class="grid"><div class="card"><div class="kpi">4,0%</div><p class="small">Remuneração inicial indicada no material EZZE.</p></div><div class="card"><div class="kpi gold">4,5%</div><p class="small">Remuneração Corretor Ouro indicada no material EZZE.</p></div><div class="card"><div class="kpi blue">5,0%</div><p class="small">Remuneração Corretor Diamante indicada no material EZZE.</p></div><div class="card"><div class="kpi">R$ 426 mil</div><p class="small">Comissões totais estimadas para produção anual de R$ 10 milhões, já considerando efeito médio de cancelamentos, conforme material EZZE.</p></div></div>
+<table><tr><th>Base da remuneração</th><th>Como defender tecnicamente</th></tr><tr><td>Implantação</td><td>Reduz custo de tentativa e erro, tempo de integração e risco de execução.</td></tr><tr><td>Governança</td><td>Evita desalinhamento de comunicação, responsabilização e jornada do cliente.</td></tr><tr><td>Performance</td><td>Transforma canal em operação acompanhada por indicadores, metas e melhoria contínua.</td></tr><tr><td>Conhecimento do processo</td><td>PagBank/EZZE nos procuram por domínio prático do funcionamento, dores e riscos da operação.</td></tr><tr><td>Receita incremental</td><td>Consórcio cria receita nova e cross-sell em seguros, crédito complementar, conta PJ e investimentos.</td></tr></table>
+</section>
+<section id="roadmap"><h2>9. Roadmap GitHub / reunião</h2><table><tr><th>Fase</th><th>Prazo</th><th>Objetivo</th><th>Entregáveis</th></tr><tr><td>Preparação</td><td>0–15 dias</td><td>Alinhar tese, fontes, produtos e matriz de responsabilidades.</td><td>Este site, sumário executivo, perguntas-chave e versão impressa.</td></tr><tr><td>Diagnóstico com PagBank</td><td>15–30 dias</td><td>Validar base, canais, jornada, tecnologia e compliance.</td><td>RACI, fluxo operacional, premissas comerciais e riscos.</td></tr><tr><td>Piloto</td><td>31–90 dias</td><td>Rodar ofertas controladas por público e canal.</td><td>Playbook, treinamento, régua de comunicação e dashboard de KPIs.</td></tr><tr><td>Escala</td><td>91–180 dias</td><td>Expandir com base nos indicadores do piloto.</td><td>Metas, campanhas segmentadas, governança mensal e plano de cross-sell.</td></tr></table></section>
+<section id="fontes"><h2>10. Fontes e memória de sustentação</h2><table><tr><th>Fonte</th><th>Uso no material</th></tr><tr><td>PagBank / SEC 2T25</td><td>Clientes bancários ativos, merchants ativos, TPV, cash-in, carteira de crédito, depósitos e indicadores operacionais.</td></tr><tr><td>Apresentação PagBank 2T25</td><td>TPV por segmento, Active Banking Only, TPV total, Pix/Cards, depósitos, crédito e penetração de produtos.</td></tr><tr><td>ABAC 2025</td><td>Créditos comercializados e cotas vendidas no Sistema de Consórcios.</td></tr><tr><td>Banco Central do Brasil</td><td>Competência de normatização, autorização, supervisão e controle de administradoras de consórcio.</td></tr><tr><td>Apresentação EZZE Consórcios</td><td>Dados do produto, Âncora, white label, taxas, prazos, modalidades de lance, remuneração e projeção de receita.</td></tr></table>
+<div class="footer">Observação: a quebra exata PF/PJ da PagBank não foi afirmada porque não apareceu nos materiais públicos utilizados. A página usa proxies públicos e deve ser atualizada caso a PagBank disponibilize a segmentação oficial.</div></section>
+</main></body></html>
